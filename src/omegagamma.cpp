@@ -4,7 +4,7 @@
 // [[Rcpp::interfaces(cpp)]]
 void omegagamma(arma::mat distance,arma::imat xi,double disfix,double alpha,arma::colvec *gammaex,arma::colvec *omega1ex,arma::colvec *omega2ex,arma::colvec *sumex)
 {
-#define DEN (exp(1)-1)
+#define DEN (exp(1.0)-1.0)
 
 int nOss=xi.n_rows;
 int m=xi.n_cols;

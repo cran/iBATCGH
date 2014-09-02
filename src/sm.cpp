@@ -4,7 +4,7 @@
 // [[Rcpp::interfaces(cpp)]]
 arma::vec sm(arma::mat distance,arma::imat xi,double disfix)
 {
-#define DEN (exp(1)-1)
+#define DEN (exp(1.0)-1.0)
 
 int nOss=xi.n_rows;
 int m=xi.n_cols;

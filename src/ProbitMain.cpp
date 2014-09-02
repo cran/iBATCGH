@@ -5,7 +5,7 @@
 Rcpp::List iBATProbit(arma::mat Y,arma::mat X,arma::colvec distance,double disfix,int intercept,arma::imat xi,arma::icolvec R,arma::mat tran,arma::colvec mu,arma::colvec sigma,double cmu,double c,double delta,double d,double alpha0,double alpha1,arma::colvec deltak,arma::colvec tauk,arma::colvec upp_bounds,arma::colvec low_bounds,arma::colvec alpha_IG,arma::colvec beta_IG,arma::colvec low_IG,arma::rowvec a,int niter,int burnin,int Cout,double phi,float pR,int selectioncgh,float pXI){
 
 
-double den=(exp(1)-1);
+double den=(exp(1.0)-1.0);
 
 int ns=tran.n_rows;
 arma::mat A(ns,ns);

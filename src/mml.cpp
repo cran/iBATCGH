@@ -8,7 +8,7 @@ arma::icolvec R(mR,mg,false);
 arma::mat Y(mY,nOss,g,false);
 arma::imat X(mX,nOss,p,false);
 
-int ind=(int) floor(elem/p);
+int ind=elem/p;
 double output;
 
 //log-marginal model likelihood of Yi

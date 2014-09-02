@@ -4,7 +4,7 @@
 // [[Rcpp::export]]
 Rcpp::List iBAT(arma::mat Y,arma::mat X,arma::colvec distance,double disfix,int intercept,arma::imat xi,arma::icolvec R,arma::mat tran,arma::colvec mu,arma::colvec sigma,double cmu,double c,double delta,double d,double e,double f,double alpha,arma::colvec deltak,arma::colvec tauk,arma::colvec upp_bounds,arma::colvec low_bounds,arma::colvec alpha_IG,arma::colvec beta_IG,arma::colvec low_IG,arma::rowvec a,int niter,int burnin,int Cout,double phi,float pR,int selectioncgh,float pXI, int indep){
 //Declare and initialize variables
-double den=(exp(1)-1);//Fixed quantity
+double den=(exp(1.0)-1.0);//Fixed quantity
 double betaden = Rf_beta(e,f);//Fixed quantity
 
 int ns=tran.n_rows;
