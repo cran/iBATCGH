@@ -1,0 +1,4 @@
+useDynLib(iBATCGH)
+importFrom(Rcpp, evalCpp)
+importFrom(msm, rtnorm)
+exportPattern("^[[:alpha:]]+")
