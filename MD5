@@ -1,4 +1,4 @@
-df653ee61f83fd1c3e049b4cebf52807 *DESCRIPTION
+551cb6b7f648dab69f50a24704a4ffb9 *DESCRIPTION
 a70323821436705d1165afd93cb85c9e *NAMESPACE
 14c29a402ba734a23a8addcf7828b613 *R/Inference.R
 c6e4e72dcec57962924a0d9a2c7abdfc *R/InferenceA.R
@@ -50,10 +50,10 @@ d75ccf9dfa2ddb7fcb8e68b0a8268538 *man/Scenario2.Rd
 ebdb27934de2403958c58ab9f515daff *src/MHRmixture.cpp
 aff3d6c83ce3fd1fe36ce086e9acc365 *src/MHXIProbit.cpp
 d4ec9bc7fd69c8a96c971a6bc4177bd2 *src/MHXImixture.cpp
-3acee447415575a6db335c2ab5d04245 *src/Makevars
-1318b94821080eba72e39978bbf64e3b *src/Makevars.win
+3aa9515232043a35934da51a6142cd64 *src/Makevars
+3aa9515232043a35934da51a6142cd64 *src/Makevars.win
 9a307ec547a9d3f84be26368a3e2e588 *src/MixtureMain.cpp
-34835a95b3830128604806d4b78d31df *src/ProbitMain.cpp
+8b6c1fd54c1103c191dfc5967127293f *src/ProbitMain.cpp
 cd19ffff2b952a46cc64fcdcf2ac767b *src/RListToVector.cpp
 7068c0d12ac3b11c0f75afc0753b7e1c *src/RcppExports.cpp
 b0fb0ba2352c711c18abde1c6e1035fa *src/Tran.cpp

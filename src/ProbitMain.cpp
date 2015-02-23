@@ -31,7 +31,6 @@ mDist=distance.memptr();
 int accR=0;
 int accXI=0;
 int accA=0;
-int accAlpha1=0;
 
 Pi=initial(tran);
 A=arma::cumsum(tran,1);
@@ -61,6 +60,7 @@ arma::vec n_k(4);
 arma::vec theta2(4);
 arma::vec weight_means(4);
 arma::vec V_k(4);
+double thirdbound;
 
 //Compute H_n
 arma::mat os(nOss,nOss);
@@ -213,7 +213,10 @@ n_k[3]=xipos4.n_rows;
 
 
 for (int j=0; j<4; j++){
-    if(j==3){low_bounds[3]=mu[2]+3*sigma[2];}
+    if(j==3){
+		thirdbound=(mu[2]+3*sigma[2]);
+		low_bounds[3]=std::min(thirdbound,upp_bounds[2]);
+	}
     if(n_k[j]==0){
                   //mu[j]=Rcpp::as<double>(rtnorm(Named("n",1),Named("mean",deltak[j]),Named("sd",tauk[j]),Named("lower",low_bounds[j]),Named("upper",upp_bounds[j])));
                   GetRNGstate();
@@ -249,7 +252,6 @@ output[4*niter+2]=xi4;
 output[4*niter+3]=accR;
 output[4*niter+4]=accXI;
 output[4*niter+5]=accA;
-output[4*niter+6]=accAlpha1;
 return output;
 }
 
