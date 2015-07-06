@@ -4,14 +4,14 @@
 Postprocessing - Inference on the association matrix
 }
 \description{
-This function performs posterior inference on the association matrix, returning the matrix of posterior probabilities of inclusion for each association gene expression - CGH. It also returns the binary matrix of significant links that exceed a certain threshold.
+This function performs posterior inference on the association matrix, returning the matrix of posterior probabilities of inclusion for each association gene expression - CGH. It also returns the binary matrix of significant links that exceed a threshold given as argument.
 }
 \usage{
 InferenceR(listR, G, M, niter, burnin, threshold = 0.5)
 }
 \arguments{
   \item{listR}{
-First niter elements of the output of the main function
+First niter objects of the output of the main function
 }
   \item{G}{
 Number of gene expression probes

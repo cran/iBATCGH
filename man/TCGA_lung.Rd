@@ -5,11 +5,11 @@
 TCGA lung squamous cell carcinoma data
 }
 \description{
-TCGA lung squamous cell carcinoma after filtering out data as described in the reference.
+Processed and filtered TCGA lung squamous cell carcinoma data, as described in the reference.
 }
 \usage{data(TCGA_lung)}
 \format{
-The format is a list of 3 elements\cr
+The format is a list of 3 objects\cr
  $ aCGH\cr
  $ Affy\cr
  $ distance

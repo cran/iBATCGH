@@ -33,13 +33,13 @@ Vector of distance between CGH probes
 Length of the chromosome under investigation
 }
   \item{intercept}{
-If set to one, the intercept is included in the regression model
+If set to one an intercept is included in the regression model
 }
   \item{xi}{
 Initialized matrix of latent states
 }
   \item{R}{
-Initialized association matrix to be vectorized; if set to -1, a vector of all zero is automatically created
+Initialized association matrix in a vector form. Default set to -1, that automatically creates a vector with all the positions set to zero
 }
   \item{tran}{
 Initialized transition matrix
@@ -48,13 +48,13 @@ Initialized transition matrix
 Initialized state specific mean vector
 }
   \item{sigma}{
-Initialized state specific sd vector
+Initialized state specific standard deviation vector
 }
   \item{cmu}{
-Parameter that control the variance of the prior on the intercept
+Parameter that controls the variance of the prior on the intercept
 }
   \item{c}{
-Parameter that determine the shrinkage in the model
+Parameter that determines the shrinkage in the model
 }
   \item{delta}{
 Parameter of the Inverse-Gamma prior on the error variance
@@ -69,28 +69,28 @@ Baseline intercept of the selection prior
 Parameter that regulates the strength of the spatially informed dependence
 }
   \item{deltak}{
-Vector of mean of the truncated normal prior on the state specific mean
+Vector of mean of the prior on the state specific mean
 }
   \item{tauk}{
-Vector of sd of the truncated normal prior on the state specific mean
+Vector of sd of the prior on the state specific mean
 }
   \item{upp_bounds}{
-Vector of upper bounds of the truncated normal prior on the state specific mean
+Vector of upper bounds of the prior on the state specific mean
 }
   \item{low_bounds}{
-Vector of lower bounds of the truncated normal prior on the state specific mean
+Vector of lower bounds of the prior on the state specific mean
 }
   \item{alpha_IG}{
-Parameter of the truncated Inverse-Gamma prior on the state specific sd
+Parameter of the prior on the state specific standard deviation
 }
   \item{beta_IG}{
-Parameter of the truncated Inverse-Gamma prior on the state specific sd
+Parameter of the on the state specific standard deviation
 }
   \item{low_IG}{
-Truncation of the truncated Inverse-Gamma prior on the state specific sd
+Truncation of the prior on the state specific standard deviation
 }
   \item{a}{
-Vector of parameters of the Dirichlet prior on the transition matrix
+Vector of parameters of the prior on the transition matrix
 }
   \item{niter}{
 Number of Monte Carlo Markov Chain iteration
@@ -99,23 +99,23 @@ Number of Monte Carlo Markov Chain iteration
 Burn-in
 }
   \item{Cout}{
-Print the number of iterations already ran every Cout iterations
+Print the number of iterations ran every Cout iterations
 }
   \item{phi}{
 Probability of an A/D step
 }
   \item{pR}{
-Expected percentage of number of updates on the row (gene expression) of the association matrix at each iteration
+Parameter of the distribution used to select the rows to be updated at every MCMC iteration
 }
   \item{selectioncgh}{
-Number of samples not in neutral state in order to consider a CGH as a potential candidate for association with gene expression; if set to -1, it is automatically set to 10\% of the samples
+Number of samples not in neutral state in order to consider a CGH as a potential candidate for association with gene expression. Default set to -1 that automatically set it to 10\% of the samples
 }
   \item{pXI}{
-Expected percentage of number of updates on the row (samples) of the latent state matrix at each iteration
+Parameter of the distribution used to select the rows to be updated at every MCMC iteration
 }
 }
 \value{
-A list made of 4*niter+3 elements. The first niter elements store, for every iteration, a vector of the positions of the association matrix set to one. The second, third and fourth niter elements store the value, at every iteration, of the transition matrix, the vectors of state specific mean and variance, respectively. The last three elements store three matrices that counts the number of times the corresponding latent state has been set to 1,3 or 4.
+The output consists of an R list composed by 4*niter+3 objects, where niter is the number of MCMC iterations. The first niter objects of the list are vectors, each containing the positions of the association matrix set to one, at the corresponding MCMC iteration. Each of the following niter objects of the list are the transition matrices at the corresponding MCMC iteration, while the third and the fourth set of niter objects are the vectors of state specific mean and state specific variance, respectively. The last three objects of the list consist of three matrices counting the number of times the corresponding latent state has been set to 1,3 and 4, respectively.
 }
 \references{
 Cassese A, Guindani M, Vannucci M. A Bayesian integrative model for genetical genomics with spatially informed variable selection. Cancer Informatics.

@@ -21,10 +21,10 @@ Number of CGH probes
 }
 }
 \details{
-This is an internal function and is not supposed to be used by the user.
+This is an internal function.
 }
 \value{
-Return a vector with counts for every position of the association matrix.
+Returns a vector whose elements are the number of times, across the MCMC iterations, the corresponding position of the transition matrix has been set to one.
 }
 \author{
 Alberto Cassese

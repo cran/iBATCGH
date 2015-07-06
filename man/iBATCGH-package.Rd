@@ -12,8 +12,8 @@ Bayesian integrative models of gene expression and comparative genomic hybridiza
 \tabular{ll}{
 Package: \tab iBATCGH\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-07-31\cr
+Version: \tab 1.3\cr
+Date: \tab 2015-07-06\cr
 License: \tab GNU\cr
 }
 The package takes as inputs gene expression, Comparative Genomic Hybridization (CGH) data, and the physical distance between CGH probes. It returns posterior probabilities of inclusion for each potential association gene expression - CGH, and inference on the CGH latent states. Two different models have been considered, see references for details. Available functions are classified in four classes: Preprocessing, Main, Postprocessing, Simulated Data.
@@ -24,7 +24,7 @@ Marina Vannucci,
 Michele Guindani,
 Mahlet G. Tadesse.
 
-Maintainer: Alberto Cassese <alberto.cassese@rice.edu>
+Maintainer: Alberto Cassese <alberto.cassese@maastrichtuniversity.nl>
 }
 \references{
 Cassese A, Guindani M, Tadesse M, Falciani F, Vannucci M. A hierarchical Bayesian model for inference of copy number variants and their association to gene expression. Annals of Applied Statistics, 8(1), 148-175.\cr

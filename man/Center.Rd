@@ -4,7 +4,7 @@
 Preprocessing - Center gene expression data
 }
 \description{
-This function takes as input a matrix and center each column with respect to its mean.
+This function takes as argument a matrix of gene expression measurements Y, and returns the matrix obtained after centering each column with respect to its mean.
 }
 \usage{
 Center(Y)
@@ -15,10 +15,10 @@ The matrix of data to be centered.
 }
 }
 \details{
-This function is used to center each gene of the gene expression matrix.
+This function center each column of the gene expression matrix.
 }
 \value{
-The matrix of centered data.
+The matrix of data obtained after centering each column with respect to its mean.
 }
 
 \author{

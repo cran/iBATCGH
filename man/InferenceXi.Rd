@@ -11,7 +11,7 @@ InferenceXi(listXi, niter, burnin)
 }
 \arguments{
   \item{listXi}{
-Last three elements of the output of the main function
+Last three objects of the output of the main function
 }
   \item{niter}{
 Number of Monte Carlo Markov Chain iterations
@@ -24,7 +24,7 @@ Burn-in
 Must use the same burn-in as in the main function. 
 }
 \value{
-Matrix of modal latent states, i.e. inferred Copy Number Variants. A four class classification is considered:
+Matrix of modal latent states, i.e. estimated Copy Number Variants. A four class classification is considered:
 \enumerate{
 \item Loss
 \item Neutral

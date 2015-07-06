@@ -4,7 +4,7 @@
 Postprocessing - Posterior Inference
 }
 \description{
-Perform posterior inference on the output of the main function
+Performs posterior inference on the output of the main function
 }
 \usage{
 Inference(listComplete, G, M, niter, burnin, threshold = 0.5)
@@ -20,7 +20,7 @@ Number of gene expression probes
 Number of CGH probes
 }
   \item{niter}{
-Number of Monte Carlo Markov Chain iteration
+Number of Monte Carlo Markov Chain iterations
 }
   \item{burnin}{
 Burn-in
@@ -30,15 +30,15 @@ Threshold on the posterior probabilities of inclusion of the association matrix
 }
 }
 \details{
-Wrapper function that calls InferenceR, InferenceXi, InferenceA, InferenceMu, InferenceSd on the output of the main function.
+Wrapper function which calls InferenceR, InferenceXi, InferenceA, InferenceMu, InferenceSd on the output of the main function.
 }
 \value{
 A list made by the following items
-\item{R }{Inference on the association matrix}
-\item{Xi }{Inference on the matrix of latent staes}
-\item{A }{Inference on the transition matrix}
-\item{Mu}{Inference on the vector of state specific mean}
-\item{Sd }{Inference on the vector of state specific sd}
+\item{R }{Binary matrix of estimated association}
+\item{Xi }{Matrix of estimated copy number states}
+\item{A }{Estimated transition matrix}
+\item{Mu}{Estimated vector of state specific means}
+\item{Sd }{Estimated vector of state specific standard deviations}
 }
 \references{
 Cassese A, Guindani M, Tadesse M, Falciani F, Vannucci M. A hierarchical Bayesian model for inference of copy number variants and their association to gene expression. Annals of Applied Statistics, 8(1), 148-175.\cr

@@ -5,11 +5,11 @@
 NCI-60 cancer cell lines data
 }
 \description{
-NCI-60 cancer cell lines data after filtering out data as described in the reference.
+Processed and filtered NCI-60 cancer cell lines data, as described in the reference.
 }
 \usage{data(NCI_60)}
 \format{
-The format is a list of 3 elements\cr
+The format is a list of 3 objects\cr
  $ aCGH\cr
  $ Affy\cr
  $ distance

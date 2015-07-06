@@ -4,7 +4,7 @@
 Simulated data - Scenario 2
 }
 \description{
-Simulate the data as described in the reference provided below (Scenario 2).
+Simulates the data as described in the reference provided below (Scenario 2).
 }
 \usage{
 Scenario2(sigmak = 0.1)
@@ -12,11 +12,11 @@ Scenario2(sigmak = 0.1)
 
 \arguments{
   \item{sigmak}{
-Sd of the error term
+Standard deviation of the error term
 }
 }
 \value{
-Return a list made of the following components
+Return a list made of the following items
 \item{Y }{Matrix of simulated gene expression}
 \item{X }{Matrix of simulated CGH}
 \item{Xi }{True matrix of hidden states}

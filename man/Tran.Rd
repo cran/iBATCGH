@@ -4,7 +4,7 @@
 Preprocessing - Tran
 }
 \description{
-This function takes as input a matrix of estimated latent states (4 classes) and returns the corresponding transition matrix.
+This function computes the transition matrix corresponding to a specific matrix of latent states.
 }
 \usage{
 Tran(xi)

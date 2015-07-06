@@ -4,7 +4,7 @@
 Preprocessing - Initialize matrix of latent states
 }
 \description{
-This function initialize the matrix of latent states, using a crude estimator.
+This function takes a matrix of CGH data as the only argument and returns a crude estimate of the corresponding latent copy number states.
 }
 \usage{
 InitXi(X, bounds = c(-0.5, 0.29, 0.79))
@@ -14,14 +14,14 @@ InitXi(X, bounds = c(-0.5, 0.29, 0.79))
 Matrix of aCGH data
 }
   \item{bounds}{
-Thresholds used to estimate the latent states
+Vector of threshold used to estimate the latent states
 }
 }
 \details{
-The procedure is based on thresholds that group the data into subsets. Each subset is associated to a latent state.
+Given as argument a vector of threshold bounds the function simply applies the thresholding to the data and groups them into four subsets. Each subset is associated to a specific latent state.
 }
 \value{
-Return a matrix of estimated latent states, that should be used as input of the main function.
+Return a matrix of estimated latent states, that could be used as input of the main function.
 }
 \references{
 Cassese A, Guindani M, Tadesse M, Falciani F, Vannucci M. A hierarchical Bayesian model for inference of copy number variants and their association to gene expression. Annals of Applied Statistics, 8(1), 148-175.\cr
